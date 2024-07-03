@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Troca de Produtos Usados por Novos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 5px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .produto {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            overflow: hidden;
+            background-color: white;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .produto:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        .produto img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px 5px 0 0;
+        }
+        .produto-info {
+            padding: 15px;
+        }
+        .produto h3 {
+            margin-top: 0;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        .produto p {
+            margin: 0;
+            color: #666;
+        }
+        .btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            display: block;
+            width: 100%;
+            text-align: center;
+            transition: background-color 0.3s;
+        }
+        .btn:hover {
+            background-color: #45a049;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Troca de Produtos Usados por Novos</h1>
+    </header>
+    <div class="container">
+        <div class="produto">
+            <img src="produto1.jpg" alt="Produto 1">
+            <div class="produto-info">
+                <h3>Camiseta Masculina</h3>
+                <p>Descrição: Camiseta de algodão, tamanho M, em bom estado.</p>
+                <a href="#" class="btn">Trocar por Novo</a>
+            </div>
+        </div>
+        <div class="produto">
+            <img src="produto2.jpg" alt="Produto 2">
+            <div class="produto-info">
+                <h3>Livro Infantil</h3>
+                <p>Descrição: Livro de histórias infantis, ilustrações coloridas.</p>
+                <a href="#" class="btn">Trocar por Novo</a>
+            </div>
+        </div>
+        <div class="produto">
+            <img src="produto3.jpg" alt="Produto 3">
+            <div class="produto-info">
+                <h3>Bicicleta Urbana</h3>
+                <p>Descrição: Bicicleta de cidade, aro 26, usada poucas vezes.</p>
+                <a href="#" class="btn">Trocar por Novo</a>
+            </div>
+        </div>
+        <div class="produto">
+            <img src="produto4.jpg" alt="Produto 4">
+            <div class="produto-info">
+                <h3>Brinquedos Educativos</h3>
+                <p>Descrição: Conjunto de brinquedos educativos para crianças pequenas.</p>
+                <a href="#" class="btn">Trocar por Novo</a>
+            </div>
+        </div>
+        <div class="produto">
+            <img src="produto5.jpg" alt="Produto 5">
+            <div class="produto-info">
+                <h3>Mochila Escolar</h3>
+                <p>Descrição: Mochila escolar resistente, com vários compartimentos.</p>
+                <a href="#" class="btn">Trocar por Novo</a>
+            </div>
+        </div>
+        <!-- Adicione mais produtos conforme necessário -->
+    </div>
+    <footer>
+        <p>&copy; 2024 Troca de Produtos Usados por Novos. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
